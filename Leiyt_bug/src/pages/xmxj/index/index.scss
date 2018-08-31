@@ -1,0 +1,205 @@
+#app{
+    background: #75693a;
+}
+.model_xmxj_box{
+    .banner{
+        width: 100%;
+        img{width: 100%;}
+    }
+    .marquee_a{
+        color: #fff;
+        font-size: 0.26rem;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        white-space: nowrap;
+        position: relative;
+        left: .1rem;
+        overflow: hidden;
+        width: 100%;
+        >ul{
+            position: absolute;
+            // transition: all 0.3s linear;
+            left:0;
+        }
+        li{
+            display:inline-block;
+            margin-right:0.5rem;
+            span{
+                color:#ffd944;
+            }
+        }
+    }
+    .container{
+        background: #75693a url(../_img/xmxj_floor.png) no-repeat top center /100% .95rem;
+        padding-top: .91rem;
+        .content-wrapper{
+            margin: 0 .1rem;
+            background: #f6e9c8;
+        }
+        .border-T{
+           width: 100%;
+           height: .71rem;
+           background: url(../_img/xmxj_hw_1.png) no-repeat top center/100% 100%;
+        }
+        .border-B{
+           width: 100%;
+           height: .65rem;
+           background: url(../_img/xmxj_hw_2.png) no-repeat bottom center/100% 100%;
+        }
+        .sec-wrapper{
+            padding: 0 .3rem;
+            margin-top: -.3rem;
+            position: relative;
+            height: auto;
+            &::before,&::after{
+               position: absolute;
+               top: 0;
+               width: .12rem;
+               height: 100%;
+               background-image: url(../_img/xmxj_border_l.png);
+               background-size: 100%;
+               background-repeat: repeat-y;
+               content: ''; 
+            }
+            &::before{
+                left: 0;
+            }
+            &::after{
+                right: 0;
+                background-image: url(../_img/xmxj_border_r.png);
+             }
+        }
+        .ds-info{
+            img{width: 100%;} 
+        }
+        .user-info{
+            background: url(../_img/xmxj_kuang.png) no-repeat center/100% 100%;
+            padding: .2rem;
+            .item{
+                display: flex;
+                display: -webkit-flex;
+                align-items: center;
+                font-size: .3rem;
+                height: .9rem;
+                border-bottom: 1px solid #66685a;
+                padding: 0 .2rem;
+                >label{
+                    line-height: .9rem;
+                    margin-right: .2rem;
+                }
+            }
+            .input-box{
+                flex: 1;
+                -webkit-flex:1;
+                display: flex;
+                display: -webkit-flex;
+                align-items: center;
+                height: 100%;
+                input{
+                  appearance: none;
+                  -webkit-appearance: none;
+                  background: none;
+                  border: none;
+                  height: 100%;
+                  outline: none;
+                }
+                // 解决ios下颜色变淡问题
+                input:disabled{
+                    -webkit-text-fill-color: #000;
+                    -webkit-opacity: 1;
+                    color: #000;
+                }
+                input:placeholder{
+                    -webkit-opacity: 1;
+                }
+                .ipt_date{
+                    flex: 1;
+                    -webkit-flex:1;
+                }
+                .icon-clendar{
+                    width: .4rem;
+                    height: .42rem;
+                }
+                .checkNo,.check{
+                    width: .36rem;
+                    height: .36rem;
+                    background: url(../_img/xmxj_radio_check.png) no-repeat center/100% 100%;
+                }
+                .check{
+                    background: url(../_img/xmxj_radio_checked.png) no-repeat center/100% 100%;
+                }
+            }
+            .gender .text{
+                margin-left: .2rem;
+            }
+            .btn_cs1{
+                width: 100%;
+                height: 1.07rem;
+                background: url(../_img/xmxj_btn_cs.png) no-repeat center/100% 100%;
+                margin-top: .3rem;
+            }
+            .tip{
+                font-size: .26rem;
+                margin:.1rem 0;
+                span{color: #a3491c;}
+            }
+        }
+        .xmxj_block{margin-top:.4rem;
+            img{width: 100%;}
+        }
+        .xmxj_comment{
+            margin-top: .3rem;
+            .title{
+                img{
+                    width: 100%;
+                }
+            }
+            .marquee{
+                height: 5rem;
+                text-align: left;
+                position: relative;
+                overflow:hidden;
+                >ul{
+                    position:absolute;
+                }
+                ul>li{
+                    padding: .2rem;
+                    border-bottom: 1px solid #8d7d59;
+                    >h4{
+                        color:#a3491c;
+                        font-size:.32rem;
+                        margin-bottom:.1rem;
+                        span{
+                            margin-left:.22rem;
+                        }
+                        .fr{
+                            font-size:.28rem;
+                            margin-left: 0;
+                            float: right;
+                        }
+                    }
+                    >p{
+                        font-size:.28rem;
+                        line-height: .36rem;
+                        word-wrap: break-word;
+                    }
+                }
+            }
+        }
+    }
+    .button-flexd {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: .1rem .4rem;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background: #75693a;
+        .btn{
+            display: block;
+            height: 1.07rem;
+            background: url(../_img/xmxj_btn_cs.png) no-repeat center/100% 100%;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+// module scss
+.model_together_box{
+    background: #2A3549;
+    height: auto; 
+    img{
+      width: 100%;
+    }
+    .col-orgin{
+      color: #EEC039;
+    }
+    // 按钮
+    .hlyc-button{
+      border-radius: 5px;
+      height: 0.9rem;
+      line-height: 0.9rem;
+      background: linear-gradient(to right, #FC8E8E, #FE9323);
+      margin: 0.25rem 0.2rem 0 0.2rem;
+      font-size: 0.48rem;
+      color: white;
+      text-align: center;
+      box-shadow: 0px 9px 10px rgba(132, 26, 63, 0.4);
+    }
+    // 弹窗提示
+    .message_layer{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        line-height: 100%;
+        display: table;
+        background: rgba(1,1,1,0.1);
+        z-index: 999;
+        top: 0;
+        left: 0;
+        >.message_box{
+            display: table-cell;
+            text-align: center;
+            width: 90%;
+            vertical-align: middle;
+            >span{
+                padding: 0.15rem 0.4rem;
+                background: rgba(1, 1, 1, 0.8);
+                color: white;
+                border-radius: 3px;
+                font-size: 0.31rem;
+            }
+        }
+    }
+    /*客服模块*/
+    .serviceBtn{
+      position: fixed;
+      padding: 0 0.26rem;
+      bottom: 1.05rem;
+      right: 0.25rem;
+      text-align: center;
+      border-radius: 0.4rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      background: rgba(0, 0, 0, 0.3);
+      color: #FFFFFF;
+      font-size: 0.32rem;
+      z-index: 11;
+      overflow: hidden;
+    }
+    .serviceBtn .my-order{
+      display: inline-block;
+    }
+    /*客服模块*/
+    .serviceBtn{
+      position: fixed;
+      padding: 0 0.26rem;
+      bottom: 1.05rem;
+      right: 0.25rem;
+      text-align: center;
+      border-radius: 0.4rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      background: rgba(0, 0, 0, 0.3);
+      color: #FFFFFF;
+      font-size: 0.32rem;
+      z-index: 11;
+      overflow: hidden;
+    }
+    .serviceBtn .my-order{
+      display: inline-block;
+      // border-right: 1px solid #FFFFFF;
+      // padding-right: 0.2rem;
+    }
+      
+    /* 底部按钮 */
+    .bottom-box {
+      width: 100%;
+      border-top: 1px solid #555d6d;
+      padding: 0.1rem 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: #2a3549;
+    }
+    .bottom-box .btn-img {
+      margin: 0 auto;
+      display: block;
+      width: 5.78rem;
+      height: 0.8rem;
+      background-image: url("../_img/lsy_btn_ljcs.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }

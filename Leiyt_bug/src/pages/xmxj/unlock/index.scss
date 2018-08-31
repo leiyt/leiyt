@@ -1,0 +1,314 @@
+.model_xmxj_box{
+    background-color: #75693a;
+    .box_full{
+        .banner{
+            width: 100%;
+            height: 2.5rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        // 主内容
+        .padding-box{
+            padding: 0.2rem 0.1rem;
+            box-sizing: border-box;
+            font-size: 0.28rem;
+            // 顶部文字
+            .top_des{
+                padding: 0.1rem;
+                font-size: 0.24rem;
+                line-height: 0.34rem;
+                margin-bottom: 0.3rem;
+                color: #f7f5ec;
+                .color_dark{
+                    color: #FFD944;
+                }
+            }
+            // 缘主信息
+            .info_box{
+                padding: 0.2rem 0.1rem;
+                background-color: #F6E9C7;
+                .basic_info{
+                    padding: 0.25rem 0.35rem;
+                    padding-right: 1.6rem;
+                    font-size: 0.3rem;
+                    line-height: 0.5rem;
+                    background: url('../_img/xmxj_unlock_info_bj.png')no-repeat center/100% 100%;
+                    .name_box{
+                        i{
+                            display: inline-block;
+                            width: 0.42rem;
+                            height: 0.42rem;
+                            line-height: 0.42rem;
+                            text-align: center;
+                            color: #b5371a;
+                            font-size: 0.35rem;
+                            font-weight: 700;
+                            background: url('../_img/xmxj_unlock_font_icon.png')no-repeat center/100% 100%;
+                        }
+                    }
+                    .sex_box{
+                        margin-left: 0.5rem;
+                    }
+                }
+                .mingge_box{
+                    display: flex;
+                    margin: 0.25rem 0;
+                    li{
+                        flex: 1;
+                        min-height: 2.2rem;
+                        border-radius: 5px;
+                        box-shadow: 1px 1px 5px #999;
+                        background-color: #FEFBF4;
+                        overflow: hidden;
+                        .top_name{
+                            font-size: 0.32rem;
+                            line-height: 0.6rem;
+                            text-align: center;
+                            position: relative;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .score_box{
+                            text-align: center;
+                            font-size: 0.22rem;
+                            margin: 0.15rem 0;
+                            .score{
+                                font-size: 0.35rem;
+                            }
+                        }
+                        .icon_box{
+                            width: 0.7rem;
+                            height: 0.7rem;
+                            margin: 0.2rem auto;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    li+li{
+                        margin-left: 0.15rem;
+                    }
+                    // 橙色
+                    li.color_orange{
+                        color: #D59805;
+                    }
+                    // 绿色
+                    li.color_green{
+                        color: #169156;
+                    }                    
+                    // 蓝色
+                    li.color_blue{
+                        color: #165E91;
+                    }                    
+                    // 红色
+                    li.color_red{
+                        color: #B5371A;
+                    }                   
+                    // 土色
+                    li.color_soil{
+                        color: #917016;
+                    }
+                }
+                .your_score{
+                    padding: 0.1rem;
+                    border-radius: 10px;
+                    font-size: 0.28rem;
+                    background: url('../_img/xmxj_unlock_sorcebj.png')no-repeat center/100% 100%;
+                    margin-top: 0.2rem;
+                    .bj_img{
+                        padding: 0.1rem 0.45rem;
+                        display: flex;
+                        .score_left{
+                            flex: 2;
+                            span{
+                                display: inline-block;
+                                width: 1.6rem;
+                                height: 0.6rem;
+                                line-height: 0.6rem;
+                                text-align: center;
+                                border-radius: 5px;
+                                font-size: 0.35rem;
+                                background-color: #D33237;
+                                color: #fff;
+                                box-shadow: 1px 1px 5px #999;
+                            }
+                        }
+                        .score_right{
+                            flex: 1;
+                            text-align: right;
+                            a{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                line-height: 0.6rem;
+                                color: #D33237;
+                            }
+                        }
+                    }
+                }
+            }
+            // 测算项目
+            .goods_box{
+                padding: 0.3rem;
+                background-color: #F6E9C7;
+                font-size: 0.3rem;
+                color: #333;
+                margin-top: 0.2rem;
+                .goods_title{
+                    margin-bottom: 0.2rem;
+                }
+                .sall_box{
+                    display: flex;
+                    .sall_left{
+                        flex: 2;
+                        .sall_price{
+                            width: 2.8rem;
+                            height: 0.6rem;
+                            line-height: 0.6rem;
+                            text-align: center;
+                            font-size: 0.26rem;
+                            color: #fff;
+                            background-color: #D33237;
+                            border-radius: 5px;
+                        }
+                        .price_before{
+                            font-size: 0.24rem;
+                            color: #666;
+                            text-decoration: line-through;
+                            margin-top: 0.15rem;
+                            text-indent: 0.2rem;
+                        }
+                    }
+                    .sall_right{
+                        flex: 1;
+                        text-align: center;
+                        .time{
+                            margin-top: 0.15rem;
+                            span{
+                                display: inline-block;
+                                width: 0.4rem;
+                                height: 0.4rem;
+                                line-height: 0.4rem;
+                                background-color: #D33237;
+                                border-radius: 5px;
+                                color: #fff;
+                                text-align: center;
+                                font-size: 0.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+            // 解锁后内容
+            .unlock_content{
+                background-color: #F6E9C7;
+                box-sizing: border-box;
+                margin-top: 1.1rem;
+                position: relative;
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 0.14rem;
+                    height: 100%;
+                    background: url('../_img/xmxj_border_l.png')repeat-y;
+                    background-size: 100% auto;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                }
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 0.14rem;
+                    height: 100%;
+                    background: url('../_img/xmxj_border_r.png')repeat-y;
+                    background-size: 100% auto;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                }
+                .top_img{
+                    width: 102%;
+                    position: absolute;
+                    top: -0.9rem;
+                    left: -1%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .top_style_img,.bottom_style_img{
+                    display: block;
+                    width: 100%;
+                    height: 0.57rem;
+                    position: absolute;
+                    left: 0;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .top_style_img{
+                    background: url('../_img/xmxj_hw_1.png')no-repeat;                    
+                    background-size: 100% auto;
+                    top: 0;
+                }
+                .bottom_style_img{
+                    background: url('../_img/xmxj_hw_2.png')no-repeat;
+                    background-size: 100% auto;
+                    background-position: left bottom;
+                    bottom: 0;
+                }
+                .content_box{
+                    padding: 0.4rem 0.5rem;
+                    min-height: 10rem;
+                    .unlock_content_title{
+                        width: 100%;
+                        margin: 0.35rem auto;
+                        text-align: center;
+                        img{
+                            width: 6.44rem;
+                            height: 1rem;
+                        }
+                    }
+                    .unlock_item_title{
+                        width: 100%;
+                        height: 0.55rem;
+                        text-align: center;
+                        img{
+                            width: auto;
+                            height: 0.55rem;
+                        }
+                    }
+                    .unlock_item{
+                        width: 5.04rem;
+                        height: 1.62rem;
+                        margin: 0.4rem auto;
+                        padding: 0.1rem 0.8rem;
+                        box-sizing: border-box;
+                        background-color: #FFF9ED;
+                        border: 1px solid #875D21;
+                        box-shadow: 1px 1px 10px #875D21;
+                        li.tips_item{
+                            width: 100%;
+                            font-size: 0.3rem;
+                            color: #333;
+                            line-height: 0.46rem;
+                            .color_dark{
+                                color: #a3491c;
+                            }
+                        }
+                    }
+                    .unlock_btn{
+                        width: 6.39rem;
+                        height: 1.07rem;
+                        margin: 0.75rem auto 0.15rem;
+                        background: url('../_img/xmxj_unlock_content_btn.png')no-repeat center/100% 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+}
